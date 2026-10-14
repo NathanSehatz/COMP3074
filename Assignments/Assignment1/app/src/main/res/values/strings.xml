@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="calculator_title">Employee Pay Calculator</string>
+    <string name="hours_hint">Hours Worked</string>
+    <string name="rate_hint">Hourly Rate ($)</string>
+    <string name="tax_hint">Tax Rate (e.g. 0.15)</string>
+    <string name="calculate_button">Calculate Pay</string>
+    <string name="about_button">About</string>
+    <string name="regular_pay">Regular Pay: $0.00</string>
+    <string name="overtime_pay">Overtime Pay: $0.00</string>
+    <string name="total_pay">Total Pay: $0.00</string>
+    <string name="tax_result">Tax: $0.00</string>
+    <string name="about">About</string>
+    <string name="tax_0_00">Tax: $0.00</string>
+    <string name="total_pay_0_00">Total Pay: $0.00</string>
+    <string name="overtime_pay_0_00">Overtime Pay: $0.00</string>
+    <string name="regular_pay_0_00">Regular Pay: $0.00</string>
+    <string name="calculate_pay">Calculate Pay</string>
+    <string name="tax_rate_e_g_0_15">Tax Rate (e.g. 0.15)</string>
+    <string name="hourly_rate">Hourly Rate ($)</string>
+    <string name="hours_worked">Hours Worked</string>
+    <string name="employee_pay_calculator">Employee Pay Calculator</string>
+    <string name="student_id_101609906">Student ID: 101609906</string>
+    <string name="nathan_sehatzadeh">Nathan Sehatzadeh</string>
+</resources>
