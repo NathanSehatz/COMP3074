@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.QuestHunt" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:fontFamily">@font/qager</item>
+        <item name="fontFamily">@font/qager</item>
+
     </style>
 
     <style name="Theme.QuestHunt" parent="Base.Theme.QuestHunt" />
+
+    <style name="RetroDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/retro_dialog_background</item>
+        <item name="android:colorAccent">#FFFFFF</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#FFFFFF</item>
+        <item name="android:fontFamily">@font/qager</item>
+        <item name="buttonBarPositiveButtonStyle">@style/RetroDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/RetroDialogButton</item>
+    </style>
+
+    <style name="RetroDialogButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/qager</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
 </resources>

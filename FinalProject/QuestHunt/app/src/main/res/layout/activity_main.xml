@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#152B28"
+    android:background="#000000"
     android:padding="24dp"
     tools:context=".MainActivity">
 
@@ -14,68 +14,107 @@
         android:id="@+id/txtTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="QUEST HUNT"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/ancient_modern_tales"
         android:gravity="center"
+        android:text="QUEST HUNT"
+        android:textColor="#FFFFFF"
+        android:textSize="76sp"
+        android:textStyle="normal"
+        app:fontFamily="@font/ancient_modern_tales"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Explore • Discover • Complete"
-        android:textSize="16sp"
-        android:textColor="#B9CECA"
-        android:gravity="center"
         android:layout_marginTop="12dp"
-        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/qager"
+        android:gravity="center"
+        android:text="Explore - Discover - Complete"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
         app:layout_constraintTop_toBottomOf="@id/txtTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnStartHunt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="Start Hunt"
-        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/txtSubtitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnTeam"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="My Team"
-        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/btnStartHunt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProgress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="My Progress"
-        android:layout_marginBottom="12dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/btnTeam"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAbout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="About"
-        app:layout_constraintTop_toBottomOf="@id/btnProgress"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,3 @@
-
 package ca.gbc.comp3074.sehatzadeh_nathan.questhunt
 
 import android.os.Bundle

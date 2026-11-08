@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Point of Interest"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/qager"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/editPointName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:hint="Point Name"
+            android:inputType="textCapWords"
+            android:fontFamily="@font/qager"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/retro_panel_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/editPointAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:fontFamily="@font/qager"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/retro_panel_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/editPointTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:hint="Challenge Instructions"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:fontFamily="@font/qager"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/retro_panel_background"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/editPointTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:hint="Tags (easy, photo, info)"
+            android:inputType="text"
+            android:fontFamily="@font/qager"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="@drawable/retro_panel_background"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSavePoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="34dp"
+            android:minHeight="64dp"
+            android:background="@drawable/retro_button_background"
+            android:fontFamily="@font/qager"
+            android:text="Save Point"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="24dp"
+            android:minHeight="64dp"
+            android:background="@drawable/retro_button_background"
+            android:fontFamily="@font/qager"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</ScrollView>

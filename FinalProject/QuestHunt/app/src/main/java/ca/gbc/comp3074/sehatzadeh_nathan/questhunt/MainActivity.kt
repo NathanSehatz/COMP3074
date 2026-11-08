@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Start hunt button
         val btnStartHunt = findViewById<Button>(R.id.btnStartHunt)
 
         btnStartHunt.setOnClickListener {
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Progress button
         val btnProgress = findViewById<Button>(R.id.btnProgress)
 
         btnProgress.setOnClickListener {
@@ -32,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        // My Team button
         val btnTeam = findViewById<Button>(R.id.btnTeam)
 
         btnTeam.setOnClickListener {
@@ -40,7 +37,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // About button
         val btnAbout = findViewById<Button>(R.id.btnAbout)
 
         btnAbout.setOnClickListener {
@@ -54,13 +50,20 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(
                 WindowInsetsCompat.Type.systemBars()
             )
+
+            val padding = (24 * resources.displayMetrics.density).toInt()
             v.setPadding(
-                systemBars.left,
-                systemBars.top,
-                systemBars.right,
-                systemBars.bottom
+                systemBars.left + padding,
+                systemBars.top + padding,
+                systemBars.right + padding,
+                systemBars.bottom + padding
             )
+
             insets
+        }
+        findViewById<Button>(R.id.btnAbout).post {
+            val width = findViewById<Button>(R.id.btnAbout).width
+            android.util.Log.d("QuestHuntWidth", "About width: $width")
         }
     }
 }

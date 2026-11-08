@@ -6,7 +6,7 @@
     android:id="@+id/pointsMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#152B28"
+    android:background="#000000"
     android:padding="24dp"
     tools:context=".PointsListActivity">
 
@@ -14,65 +14,154 @@
         android:id="@+id/txtPointsTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Hunt Locations"
         android:textColor="#FFFFFF"
-        android:textSize="28sp"
+        android:textSize="32sp"
         android:textStyle="bold"
-        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/txtPointsDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Choose a location to explore!"
-        android:textColor="#B9CECA"
-        android:textSize="16sp"
-        android:gravity="center"
         android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Choose a location to explore!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/txtPointsTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLocation1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Location 1 - City Park"
         android:layout_marginTop="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
+        android:text="Location 1 - City Park"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/txtPointsDescription"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLocation2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="Location 2 - Museum"
-        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/btnLocation1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLocation3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="Location 3 - Library"
-        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintTop_toBottomOf="@id/btnLocation2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddPoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
+        android:text="Add New Point"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/btnLocation3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editSearchPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:minHeight="48dp"
+        android:fontFamily="@font/qager"
+        android:hint="Search by name or tag"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/btnAddPoint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutSavedPoints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/editSearchPoints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnBack"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="24dp"
+        android:minHeight="64dp"
+        android:background="@drawable/retro_button_background"
+        android:fontFamily="@font/qager"
         android:text="Back to Home"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
